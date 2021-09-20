@@ -1,0 +1,11 @@
+/*** Rubén Torres ***/
+
+table{
+    border-collapse: collapse;
+    text-align: center;
+}
+
+td, th{    
+    border: 2px solid black;
+    padding: 10px;
+}
