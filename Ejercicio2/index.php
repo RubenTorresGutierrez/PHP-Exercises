@@ -2,7 +2,7 @@
 <html lang="es">
     <head>
         <meta charset="utf-8"/>
-        <title>Ejercicio Arrays 1</title>
+        <title>Ejercicio Arrays 2</title>
         <link rel="stylesheet" href="CSS/index.css" type="text/css">
     </head>
     <body>
