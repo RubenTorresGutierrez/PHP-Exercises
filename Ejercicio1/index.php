@@ -6,6 +6,7 @@
         <link rel="stylesheet" href="CSS/index.css" type="text/css">
     </head>
     <body>
+        <h1>MESES</h1>
         <table>
             <?php
 
@@ -24,7 +25,6 @@
                     11 => "Noviembre",
                     12 => "Diciembre",
                 );
-                $num=$mes[4];
 
                 echo '<tr>'.
                     '<td></td>';
@@ -48,10 +48,15 @@
                         echo '<td>'.$valor.'</td>';
                 echo '</tr>';
 
-                print_r($mes);
-                
-                echo '<p>El mes 4 es '.$num.'.</p>'
             ?>
         </table>
+        <?php
+
+            echo '<h1>PRINT_R</h1>'
+            .'<div>';
+                print_r($mes);
+            echo '</div>';
+
+        ?>
     </body>
 </html>
