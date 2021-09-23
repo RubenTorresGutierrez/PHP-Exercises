@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8"/>
+        <title>Document</title>
+    </head>
+    <body>
+        <main>
+            <form action="formulario.php" method="GET">
+                <!-- eMail -->
+                <label for="correo">Correo:</label>
+                <input type="email" name="correo" id="correo"value=""/><br/>
+                <!-- Usuario -->
+                <label for="usuario">Usuario:</label>
+                <input type="text" name="usuario" id="usuario"value=""/><br/>
+                <!-- Contraseña -->
+                <label for="pw">Contraseña:</label>
+                <input type="password" name="pw" id="pw"value=""/><br/>
+                <!-- Género input:radio -->
+                <label for="genero">Selecciona tu género: </label><br/>
+                <input type="radio" name="genero" id="hombre" value="hombre"/>
+                <label for="hombre">Hombre</label><br/>
+                <input type="radio" name="genero" id="mujer" value="mujer"/>
+                <label for="mujer">Mujer</label><br/>
+                <input type="radio" name="genero" id="otro" value="otro"/>
+                <label for="otro">Otro</label><br/>
+                <!-- Intereses -->
+                <label for="intereses">Intereses:</label><br/>                
+                <input type="checkbox"name="intereses" id="cine" value="cine"/>
+                <label for="cine">Cine</label><br/>
+                <input type="checkbox" name="intereses" id="musica" value="musica"/>
+                <label for="musica">Música</label><br/>
+                <input type="checkbox" name="intereses" id="libros" value="libros"/>
+                <label for="libros">Libros</label><br/>
+                <!-- Cómo nos conociste -->
+                <label for="conocer">¿Cómo nos conociste?</label>
+                <select name="conocer" id="conocer">
+                    <option value="internet">Por Internet</option>
+                    <option value="tv">En la televisión</option>
+                    <option value="amigos">Por amigos</option>
+                    <option value="otros">Otros</option>
+                </select><br/>
+                <!-- Comentarios -->
+                <label for="comentarios">Comentarios</label><br/>
+                <textarea name="comentarios" id="comentarios" placeholder="Deja aquí tu comentario"></textarea>                 
+                <input type="submit" name="enviar" value="ENVIAR" />
+                <input type="reset" name="borrar" value="BORRAR" />
+            </form>
+        </main>
+    </body>
+</html>
