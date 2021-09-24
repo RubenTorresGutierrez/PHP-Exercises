@@ -9,36 +9,37 @@
             <form action="formulario.php" method="GET">
                 <!-- eMail -->
                 <label for="correo">Correo:</label>
-                <input type="email" name="correo" id="correo"value=""/><br/>
+                <input type="email" name="correo" id="correo" value=""/><br/>
                 <!-- Usuario -->
                 <label for="usuario">Usuario:</label>
-                <input type="text" name="usuario" id="usuario"value=""/><br/>
+                <input type="text" name="usuario" id="usuario" value=""/><br/>
                 <!-- Contraseña -->
                 <label for="pw">Contraseña:</label>
-                <input type="password" name="pw" id="pw"value=""/><br/>
+                <input type="password" name="pw" id="pw" value=""/><br/>
                 <!-- Género input:radio -->
                 <label for="genero">Selecciona tu género: </label><br/>
-                <input type="radio" name="genero" id="hombre" value="hombre"/>
+                <input type="radio" name="genero" id="hombre" value=""/>
                 <label for="hombre">Hombre</label><br/>
-                <input type="radio" name="genero" id="mujer" value="mujer"/>
+                <input type="radio" name="genero" id="mujer" value=""/>
                 <label for="mujer">Mujer</label><br/>
-                <input type="radio" name="genero" id="otro" value="otro"/>
+                <input type="radio" name="genero" id="otro" value=""/>
                 <label for="otro">Otro</label><br/>
-                <!-- Intereses -->
+                <!-- Intereses input:checkbox -->
                 <label for="intereses">Intereses:</label><br/>                
-                <input type="checkbox"name="intereses" id="cine" value="cine"/>
+                <input type="checkbox"name="intereses" id="cine" value=""/>
                 <label for="cine">Cine</label><br/>
-                <input type="checkbox" name="intereses" id="musica" value="musica"/>
+                <input type="checkbox" name="intereses" id="musica" value=""/>
                 <label for="musica">Música</label><br/>
-                <input type="checkbox" name="intereses" id="libros" value="libros"/>
+                <input type="checkbox" name="intereses" id="libros" value=""/>
                 <label for="libros">Libros</label><br/>
-                <!-- Cómo nos conociste -->
+                <!-- Cómo nos conociste select -->
                 <label for="conocer">¿Cómo nos conociste?</label>
                 <select name="conocer" id="conocer">
-                    <option value="internet">Por Internet</option>
-                    <option value="tv">En la televisión</option>
-                    <option value="amigos">Por amigos</option>
-                    <option value="otros">Otros</option>
+                    <option value="">-- Seleccionar --</option>
+                    <option value="">Por Internet</option>
+                    <option value="">En la televisión</option>
+                    <option value="">Por amigos</option>
+                    <option value="">Otros</option>
                 </select><br/>
                 <!-- Comentarios -->
                 <label for="comentarios">Comentarios</label><br/>

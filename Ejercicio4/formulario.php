@@ -5,23 +5,28 @@
         <title>Formulario</title>
     </head>
     <body>
+        <h1>DATOS RECIBIDOS:</h1>
         <?php
             //Variables
-            $correo = $_GET['correo'];
-            $usuario = $_GET['usuario'];
-            $pw = $_GET['pw'];
-            $genero = $_GET['genero'];
-            $intereses = $_GET['intereses'];
-            $conocer = $_GET['conocer'];
-            $comentarios = $_GET['comentarios'];
 
-            echo $correo.'<br/>';
-            echo $usuario.'<br/>';
-            echo $pw.'<br/>';
-            echo $genero.'<br/>';
-            echo $intereses.'<br/>';
-            echo $conocer.'<br/>';
-            echo $comentarios.'<br/>';
+            echo 'Con print_r';
+            if(isset($_GET))
+                print_r($_GET);
+
+            if(!empty($_GET['correo']))
+                echo 'El correo es '.$_GET['correo'].'<br/>';
+            if(!empty($_GET['usuario']))
+                echo 'El usuario es '.$_GET['usuario'].'<br/>';
+            if(!empty($_GET['pw']))
+                echo 'La contraseña es '.$_GET['pw'].'<br/>';
+            if(isset($_GET['genero']))
+                echo 'El género es '.$_GET['genero'].'<br/>';
+            if(isset($_GET['intereses']))
+                echo 'Los intereses son '.$_GET['intereses'].'<br/>';
+            if(!empty($_GET['conocer']))
+                echo 'Nos conoció a través de '.$_GET['conocer'].'<br/>';
+            if(!empty($_GET['comentarios']))
+                echo 'Mensaje: '.$_GET['comentarios'].'<br/>';
         ?>
     </body>
 </html>
