@@ -18,28 +18,28 @@
                 <input type="password" name="pw" id="pw" value=""/><br/>
                 <!-- Género input:radio -->
                 <label for="genero">Selecciona tu género: </label><br/>
-                <input type="radio" name="genero" id="hombre" value=""/>
+                <input type="radio" name="genero" id="hombre" value="hombre"/>
                 <label for="hombre">Hombre</label><br/>
-                <input type="radio" name="genero" id="mujer" value=""/>
+                <input type="radio" name="genero" id="mujer" value="mujer"/>
                 <label for="mujer">Mujer</label><br/>
-                <input type="radio" name="genero" id="otro" value=""/>
+                <input type="radio" name="genero" id="otro" value="otro"/>
                 <label for="otro">Otro</label><br/>
                 <!-- Intereses input:checkbox -->
                 <label for="intereses">Intereses:</label><br/>                
-                <input type="checkbox"name="intereses" id="cine" value=""/>
+                <input type="checkbox" name="intereses[]" id="cine" value="cine"/>
                 <label for="cine">Cine</label><br/>
-                <input type="checkbox" name="intereses" id="musica" value=""/>
+                <input type="checkbox" name="intereses[]" id="musica" value="musica"/>
                 <label for="musica">Música</label><br/>
-                <input type="checkbox" name="intereses" id="libros" value=""/>
+                <input type="checkbox" name="intereses[]" id="libros" value="libros"/>
                 <label for="libros">Libros</label><br/>
                 <!-- Cómo nos conociste select -->
                 <label for="conocer">¿Cómo nos conociste?</label>
                 <select name="conocer" id="conocer">
                     <option value="">-- Seleccionar --</option>
-                    <option value="">Por Internet</option>
-                    <option value="">En la televisión</option>
-                    <option value="">Por amigos</option>
-                    <option value="">Otros</option>
+                    <option value="internet">Por Internet</option>
+                    <option value="television">En la televisión</option>
+                    <option value="amigos">Por amigos</option>
+                    <option value="otros">Otros</option>
                 </select><br/>
                 <!-- Comentarios -->
                 <label for="comentarios">Comentarios</label><br/>
