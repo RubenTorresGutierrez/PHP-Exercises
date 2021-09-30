@@ -22,6 +22,9 @@
 
             if (isset($_POST['enviar'])){
                 if (!empty($_POST['nombre'])) {
+                    //implode(): Une elementos de un array en un string
+                    //array_filter(): Filtra elementos de un array usando una función callback
+                    //explode(): Divide un string en varios strings
                     $sql = "SELECT * FROM alumno WHERE Nombre LIKE '%" . implode(' ', array_filter(explode(' ', $_POST['nombre']))) . "%';";
                     $resultado = mysqli_query($conexion, $sql);
                     if (mysqli_num_rows($resultado)>0) {
