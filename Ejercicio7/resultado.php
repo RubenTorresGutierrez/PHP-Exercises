@@ -1,5 +1,7 @@
 <?php
 
+    header(Location: localhost/DAW/2/DWES/PHP-Exercises/Ejercicio7/index.html);
+
     $conexion = new mysqli('localhost', 'root', '', 'bd_procedimiento');
     if (!empty($_POST['numalu'])) {
         $sql = 'SELECT * FROM alumno WHERE NumAlumno = ' . $_POST['numalu'] . ';';
